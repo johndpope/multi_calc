@@ -19,3 +19,5 @@ A series of Multivariable Calculus calculators in Python 3
 level_tangent: the tangent line/plane to the level curve/surface of a function
 
 line_point: the distance from a point to a line in ℝ3
+
+critical_points: the set of critical points of a function and whether each is a local min, local max, or saddle point
