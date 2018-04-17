@@ -20,13 +20,10 @@ def gradient3(func):
     return [partial_x(func,x), partial_y(func,y), partial_z(func,z)]
 
 def dot_product(x,y):
-    if len(x) != len(y):
-        print('You cannot dot 2 vectors of different dimensions')
-    else:
-        scalar_final = 0
-        for i in range(0,len(x)):
-            scalar_final = scalar_final + x[i] * y[i]
-        return (scalar_final)
+    scalar_final = 0
+    for i in range(0,len(x)):
+        scalar_final = scalar_final + x[i] * y[i]
+    return (scalar_final)
 
 def level_tangent(func,point):
     
