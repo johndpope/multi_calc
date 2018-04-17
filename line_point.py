@@ -45,11 +45,12 @@ def line_point(line,point):
     linesub0 = [(line[0].subs(t,0)),(line[1].subs(t,0)),(line[2].subs(t,0))]
     basevec = pointsvector(linesub1,linesub0)
     base = pointsdistance(linesub1,linesub0)
-    return norm(cross_productvec3(pointsvector(point,linesub1),base))/base
+    return norm(cross_productvec3(pointsvector(point,linesub1),basevec))/base
 
-print(line_point([1+t,2+3*t,t],[0,0,0]))
-print(pointsvector([1,1,2],[0,0,1]))
+line = eval(input('line = '))
+point = eval(input('point = '))
 
+print(line_point(line,point))
 
 
 
