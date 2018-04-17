@@ -3,6 +3,10 @@ from sympy import *
 x = Symbol('x')
 y = Symbol('y')
 z = Symbol('z')
+i = Symbol('i')
+j = Symbol('j')
+k = Symbol('k')
+
 
 def partial_x(func,x):
     return (diff(func,x))
@@ -28,6 +32,16 @@ def dot_product(x,y):
             scalar_final = scalar_final + x[i] * y[i]
         return (scalar_final)
 
+def cross_product2(x,y):
+    M = Matrix([[i,j],x,y])
+    M
+    return M.det()
+
+def cross_product3(x,y):
+    M = Matrix([[i,j,k],x,y])
+    M
+    return M.det()
+
 def level_tangent(func,point):
     minuspoint = []
     for i in range(0,len(point)):
@@ -44,7 +58,7 @@ def level_tangent(func,point):
         equation = '%s = 0' % (dot_product(gradient3(func),minuspoint))
         print (equation)
 
-level_tangent((x**2)*(y**2),[1,2])
+
 
 
 
