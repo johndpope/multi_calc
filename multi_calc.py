@@ -34,12 +34,10 @@ def dot_product(x,y):
 
 def cross_product2(x,y):
     M = Matrix([[i,j],x,y])
-    M
     return M.det()
 
 def cross_product3(x,y):
     M = Matrix([[i,j,k],x,y])
-    M
     return M.det()
 
 def level_tangent(func,point):
