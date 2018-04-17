@@ -1,7 +1,7 @@
-#multi_calc
+# multi_calc
 A series of Multivariable Calculus calculators in Python 3
 
-#mpmath and SymPy Installation Instructions
+# mpmath and SymPy Installation Instructions
 1. Clone this repo
 ```
    git clone https://github.com/jamesyoung4/multi_calc.git
@@ -15,5 +15,5 @@ A series of Multivariable Calculus calculators in Python 3
    sudo python3 setup.py install
 ```
 
-#Calculators
+# Calculators
 level_tangent: the tangent line/plane to the level curve/surface of a function
