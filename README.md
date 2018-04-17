@@ -17,3 +17,4 @@ A series of Multivariable Calculus calculators in Python 3
 
 # Calculators
 level_tangent: the tangent line/plane to the level curve/surface of a function
+line_point: the distance from a point to a line in ℝ3
