@@ -8,14 +8,6 @@ j = Symbol('j')
 k = Symbol('k')
 t = Symbol('t')
 
-def cross_product2(x,y):
-    M = Matrix([[i,j],x,y])
-    return M.det()
-
-def cross_product3(x,y):
-    M = Matrix([[i,j,k],x,y])
-    return M.det()
-
 def cross_productvec3(x,y):
     i = x[1]*y[2]-x[2]*y[1]
     j = x[2]*y[0]-x[0]*y[2]
